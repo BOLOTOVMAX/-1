@@ -23,11 +23,12 @@ if(minute >= 0 && minute <= 14){
 // для ru - arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс']
 // для en - arr = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
 let lang = 'ru';
+
 if(lang == 'ru' ){
-    arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+   let arr = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
     console.log(arr)
 }else if(lang == 'en' ){
-    arr = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn']; 
+   let arr = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn']; 
     console.log(arr)
 }
 
@@ -75,8 +76,16 @@ while(index >= 5 && index <= 13){
 
  // Пример 7
 // Выведите столбец четных чисел в промежутке от 0 до 16.
-
-for (let i = 0; i <= 16;i+2){
+for(let i = 0; i <= 16;){
     console.log(i);
+    i += 2;
 }
 
+// Пример 8 
+// С помощью цикла найдите сумму чисел arr = [2,5,8,3,6]
+let sum = 0;
+let arr = [2,5,8,3,6];
+for(let i = 0; i < arr.length; i++){
+     sum = sum + arr[i];
+}
+console.log(sum);
